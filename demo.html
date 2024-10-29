@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frame Demos</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Frame Demos</h1>
+        <nav>
+            <a href="#demos">Demos</a>
+            <a href="#upload">Upload Frame</a>
+            <a href="#manage">Manage Frames</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Demos Section -->
+        <section id="demos">
+            <h2>Demo of Our Photo Frames</h2>
+            <p>Check out some examples of our photo frames below:</p>
+            <div class="demo-gallery">
+                <img src="demo-frame1.jpg" alt="Demo Frame 1">
+                <img src="demo-frame2.jpg" alt="Demo Frame 2">
+                <img src="demo-frame3.jpg" alt="Demo Frame 3">
+            </div>
+        </section>
+        
+        <!-- Upload Section -->
+        <section id="upload">
+            <h2>Upload Your Frame</h2>
+            <form action="demo.js" method="post" enctype="multipart/form-data">
+                <label for="frame-title">Title:</label>
+                <input type="text" id="frame-title" name="frame-title" required><br>
+                <label for="frame-image">Image:</label>
+                <input type="file" id="frame-image" name="frame-image" accept="image/*" required><br>
+                <label for="frame-price">Price:</label>
+                <input type="text" id="frame-price" name="frame-price" required><br>
+                <input type="submit" value="Upload Frame">
+            </form>
+        </section>
+        
+        <!-- Manage Frames Section -->
+        <section id="manage">
+            <h2>Manage Frames</h2>
+            <p>Here you can view and manage the frames that have been uploaded.</p>
+            <div class="manage-gallery">
+                <!-- Dynamic content will be loaded here -->
+                <!-- Example frame entries -->
+                <div class="frame-item">
+                    <img src="demo-frame1.jpg" alt="Frame 1">
+                    <p>Title: Frame 1</p>
+                    <p>Price: $50</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>
+                <!-- More frame items can be listed here -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Photo Frame Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
